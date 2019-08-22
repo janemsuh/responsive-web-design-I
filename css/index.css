@@ -92,14 +92,14 @@ body {
 header {
 	display: flex;
 	flex-direction: column;
-	padding: 100px 0 50px 0;
+    padding: 100px 0 50px 0;
 }
 
 header h1 {
 	text-align: center;
 	font-size: 78px;
 	width: 34%;
-	margin: 25px 0 15px 100px;
+    margin: 25px 0 15px 100px;
 }
 
 header button {
@@ -110,7 +110,7 @@ header button {
 	width: 18%;
 	padding: 5px;
 	border: 1px solid gray;
-	margin-left: 175px;
+    margin-left: 175px;
 }
 
 header img {
@@ -147,6 +147,61 @@ footer {
 	margin: 50px 0 100px 0;
 }
 
+/* tablet view */
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navigation .links {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    .navigation img {
+        order: -1;
+    }
+
+    header {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 5%;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 0;
+        margin: 2% 0;
+    }
+
+    header button {
+        margin: 0 auto;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .top-content div {
+        padding-right: 3%;
+    }
+
+    .bottom-content div {
+        padding-right: 5%;
+    }
+}
 
 .services-header-img {
 	margin-top: 20px;
